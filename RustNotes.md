@@ -197,16 +197,16 @@ Tuples are collections of values of different types, and they have a fixed size 
 ```rust
 	fn calculate_power(base: f64, exponent:i32) -> f64{
 		if exponent == 0{
-		1.0
+			1.0
 		}else{
 			let mut result = base;
 			for _ in 1..exponent.abs(){
 				result*= base;
 						}
-				if exponent < 0{
-					1.0 / result
-				}else{
-					result
+		if exponent < 0{
+			1.0 / result
+		}else{
+			result
 				}			
 			}
 							
